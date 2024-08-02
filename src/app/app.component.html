@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>{{title}}</h2>
+
+  <div class="tiles" *ngFor="let row of tiles; let r = index">
+    <div class="tile" *ngFor="let col of row; let c = index" (click)="play(r, c)">
+      <p>{{col}}</p>
+    </div>
+  </div>
+</div>
